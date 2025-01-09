@@ -10,9 +10,19 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text("Hello Flutter App!"),
+          backgroundColor: Colors.blueAccent,
+          centerTitle: true,
+          title: Text("Hello Flutter"),
         ),
-        body: Text("Hello Flutter"),
+        body: Container(
+          padding: EdgeInsets.all(10),
+          margin: EdgeInsets.all(10),
+          child: Text("Hello Flutter"),
+          height: 100,
+          width: 100,
+          decoration: BoxDecoration(
+              color: Colors.blue, borderRadius: BorderRadius.circular(10)),
+        ),
       ),
     );
   }
