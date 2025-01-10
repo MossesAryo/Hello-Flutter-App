@@ -23,21 +23,57 @@ class MyApp extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              Text("Welcome To Hello Flutter App!"),
+              Text(
+                "Welcome To Hello Flutter App!",
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 14,
+                ),
+              ),
               Column(
                 children: [
                   Text("image"),
                   SizedBox(height: 20),
-                  Text("This app developed by Mosses Aryo Bimo"),
+                  Text(
+                    "This app developed by Mosses Aryo Bimo",
+                    style: TextStyle(fontWeight: FontWeight.bold),
+                  ),
                 ],
               ),
               Container(
-                  padding: EdgeInsets.all(10),
+                  padding: EdgeInsets.all(20),
                   width: double.infinity,
                   decoration: BoxDecoration(
                       color: Colors.black,
                       borderRadius: BorderRadius.circular(20)),
-                  child: Text("3rd children")),
+                  child: Row(
+                    children: [
+                      Text(
+                        "Image",
+                        style: TextStyle(color: Colors.white),
+                      ),
+                      SizedBox(width: 20),
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            "Mosses",
+                            style: TextStyle(
+                                color: Colors.white,
+                                fontWeight: FontWeight.bold),
+                          ),
+                          Text(
+                            "Flutter Developer",
+                            style: TextStyle(color: Colors.white),
+                          ),
+                          Text(
+                            "www.something.com",
+                            style: TextStyle(color: Colors.white),
+                          ),
+                        ],
+                      ),
+                    ],
+                  )),
             ],
           ),
         ),
