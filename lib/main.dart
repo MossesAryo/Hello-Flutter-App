@@ -5,6 +5,8 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -32,7 +34,10 @@ class MyApp extends StatelessWidget {
               ),
               Column(
                 children: [
-                  Text("image"),
+                  Image.asset(
+                    'assets/images/flutter-icon.png',
+                    height: 100,
+                  ),
                   SizedBox(height: 20),
                   Text(
                     "This app developed by Mosses Aryo Bimo",
@@ -48,9 +53,9 @@ class MyApp extends StatelessWidget {
                       borderRadius: BorderRadius.circular(20)),
                   child: Row(
                     children: [
-                      Text(
-                        "Image",
-                        style: TextStyle(color: Colors.white),
+                      Image.asset(
+                        'assets/images/avatar.png',
+                        height: 50,
                       ),
                       SizedBox(width: 20),
                       Column(
