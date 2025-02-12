@@ -14,7 +14,8 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           backgroundColor: Colors.blueAccent,
           centerTitle: true,
-          title: Text("Hello Flutter"),
+          title: Text("Hello Flutter",
+          style: TextStyle(fontFamily: "Poppins")),
         ),
         body: Container(
           padding: EdgeInsets.all(20),
