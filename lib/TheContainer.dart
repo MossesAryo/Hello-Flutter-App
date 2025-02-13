@@ -14,7 +14,7 @@ class Thecontainer extends StatelessWidget {
           width: double.infinity,
           decoration: BoxDecoration(color: Colors.blue[100]),
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,               
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               ChildOne(),

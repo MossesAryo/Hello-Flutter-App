@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:helloflutter/TheContainer.dart';
-import 'package:helloflutter/child-one.dart';
-import 'package:helloflutter/child-three.dart';
-import 'package:helloflutter/child-two.dart';
+
 
 void main() {
   runApp(MyApp());
